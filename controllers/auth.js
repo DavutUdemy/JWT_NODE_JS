@@ -21,6 +21,12 @@ const login = errorWrapper(async (req,res,next)=>{
     sendTokenToClient(user,res,200);
     
 })
+const imageUpload = errorWrapper(async(req,res,next)=>{
+    res.status(200).json({
+        success:true,
+        message:"Congrulations"
+    })
+})
 const register =  errorWrapper(async (req,res,next) => {
   
     const {name,email,password,role} = req.body;
@@ -93,5 +99,6 @@ module.exports={
     register,
     login,
     test,
-    logout
+    logout,
+    imageUpload
 }

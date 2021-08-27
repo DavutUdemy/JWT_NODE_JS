@@ -6,10 +6,7 @@ const CustomError = require("../../helpers/errors/customError");
 
 const getAccessToRoute = errorWrapper(async(req,res,next) => {
     // Is Token Included
-    if (!isTokenIncluded(req)){
-        return next(new CustomError("You are not authorized to access this page",403));
-    }
-    
+  
     // Get Token From Header
     
     const accessToken = getAccessTokenFromHeader(req);
