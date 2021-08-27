@@ -1,0 +1,25 @@
+{
+  "name": "jwt_node_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "link": "^0.1.5",
+    "module_name": "^1.0.0",
+    "mongoose": "^6.0.0",
+    "nodemon": "^2.0.12",
+    "webpack": "^5.51.1"
+  }
+}
